@@ -9,11 +9,11 @@ header {
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-background-color: rgb(33, 97, 140 );
+
 }
 
 body {
-  background-color: rgb(37, 40, 140);
+  background-color: black;
   color: black;
 }
 
@@ -63,4 +63,11 @@ div.busqueda {
 color: black;
 font-size: 30px;
 margin-top: 20px;
+}
+
+div.cabeza {
+  background-color: rgb(26, 188, 156 );
+  height: 161px;
+  margin-left: -7px;
+  margin-right:-7px;
 }
