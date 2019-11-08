@@ -1,1 +1,38 @@
-h1 {background-color: red;}
+main {
+  width: 100%;
+}
+
+header {
+  color: white;
+  font-size: 42px;
+  margin-top: -4%;
+}
+
+body {
+  background-color: rgb(37, 40, 140);
+  color: black;
+}
+
+div.mejorPuntuadas {
+height: 40vh;
+}
+
+div.mejorPuntuadas h2{
+background-color: gray;
+}
+
+div.populares {
+height: 40vh;
+}
+
+div.populares h2{
+background-color: gray;
+}
+
+div.alAireHoy{
+height: 40vh;
+}
+
+div.alAireHoy h2{
+background-color: gray;
+}
