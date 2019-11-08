@@ -6,6 +6,10 @@ header {
   color: white;
   font-size: 42px;
   margin-top: -4%;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+background-color: rgb(33, 97, 140 );
 }
 
 body {
@@ -35,4 +39,28 @@ height: 40vh;
 
 div.alAireHoy h2{
 background-color: gray;
+}
+
+div.inicio {
+color: black;
+font-size: 30px;
+margin-top: 20px;
+}
+
+div.generos {
+color: black;
+font-size: 30px;
+margin-top: 20px;
+}
+
+div.favoritos {
+color: black;
+font-size: 30px;
+margin-top: 20px;
+}
+
+div.busqueda {
+color: black;
+font-size: 30px;
+margin-top: 20px;
 }
