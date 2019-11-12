@@ -15,58 +15,126 @@ flex-wrap: wrap;
 body {
   background-color: black;
   color: black;
+
 }
 
 div.mejorPuntuadas {
 height: 40vh;
 }
 
-div.mejorPuntuadas h2{
+div.mejorPuntuadas h4{
 background-color: gray;
+font-family: Helvetica;
 }
 
 div.populares {
 height: 40vh;
 }
 
-div.populares h2{
+div.populares h4{
 background-color: gray;
+font-family: Helvetica;
 }
 
 div.alAireHoy{
 height: 40vh;
 }
 
-div.alAireHoy h2{
+div.alAireHoy h4{
 background-color: gray;
+font-family: Helvetica;
 }
 
 div.inicio {
-color: black;
-font-size: 30px;
+height: auto;
 margin-top: 20px;
+font-family: Helvetica;
+margin-left: 733px;
+position: absolute;
+background-color: rgba(22, 160, 133);
+border-radius: 102px 102px 102px 102px;
+padding: 10px;
+padding-top: 0px;
+padding-bottom: 0px;
+height: 39px;
+margin-top: 59px;
+border: solid 2px rgb(17, 120, 100);
+}
+
+div.inicio h6 {
+color: black;
+font-size: 20px;
+margin-top: 10px;
 }
 
 div.generos {
+  height: auto;
+  margin-top: 20px;
+  font-family: Helvetica;
+  margin-left: 812px;
+  position: absolute;
+  background-color: rgba(22, 160, 133);
+  border-radius: 102px 102px 102px 102px;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 39px;
+  margin-top: 59px;
+  border: solid 2px rgb(17, 120, 100);
+}
+
+div.generos h6 {
 color: black;
-font-size: 30px;
-margin-top: 20px;
+font-size: 20px;
+margin-top: 10px;
 }
 
 div.favoritos {
+  height: auto;
+  margin-top: 20px;
+  font-family: Helvetica;
+  margin-left: 920px;
+  position: absolute;
+  background-color: rgba(22, 160, 133);
+  border-radius: 102px 102px 102px 102px;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 39px;
+  margin-top: 59px;
+  border: solid 2px rgb(17, 120, 100);
+}
+
+div.favoritos h6 {
 color: black;
-font-size: 30px;
-margin-top: 20px;
+font-size: 20px;
+margin-top: 10px;
 }
 
 div.busqueda {
+  height: auto;
+  margin-top: 20px;
+  font-family: Helvetica;
+  margin-left: 1145px;
+  position: absolute;
+  background-color: rgba(22, 160, 133);
+  border-radius: 102px 102px 102px 102px;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 39px;
+  margin-top: 59px;
+  border: solid 2px rgb(17, 120, 100);
+}
+
+div.busqueda h6 {
 color: black;
-font-size: 30px;
-margin-top: 20px;
+font-size: 20px;
+margin-top: 10px;
 }
 
 div.cabeza {
-  background-color: rgb(26, 188, 156 );
+  background-color: rgb(162, 217, 206 );
   height: 161px;
   margin-left: -7px;
   margin-right:-7px;
