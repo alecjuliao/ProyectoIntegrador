@@ -45,70 +45,27 @@ background-color: gray;
 font-family: Helvetica;
 }
 
-div.inicio {
-height: auto;
-margin-top: 20px;
-font-family: Helvetica;
-margin-left: 733px;
-position: absolute;
-background-color: rgba(22, 160, 133);
-border-radius: 102px 102px 102px 102px;
-padding: 10px;
-padding-top: 0px;
-padding-bottom: 0px;
-height: 39px;
-margin-top: 59px;
-border: solid 2px rgb(17, 120, 100);
-}
-
-div.inicio h6 {
-color: black;
-font-size: 20px;
-margin-top: 10px;
-}
-
-div.generos {
+div.inicio{
   height: auto;
-  margin-top: 20px;
-  font-family: Helvetica;
-  margin-left: 812px;
-  position: absolute;
-  background-color: rgba(22, 160, 133);
-  border-radius: 102px 102px 102px 102px;
-  padding: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 39px;
-  margin-top: 59px;
-  border: solid 2px rgb(17, 120, 100);
+  margin-top: 70px;
+  margin-left: 450px;
+
 }
 
-div.generos h6 {
-color: black;
-font-size: 20px;
-margin-top: 10px;
-}
-
-div.favoritos {
+div.generos{
   height: auto;
-  margin-top: 20px;
-  font-family: Helvetica;
-  margin-left: 920px;
-  position: absolute;
-  background-color: rgba(22, 160, 133);
-  border-radius: 102px 102px 102px 102px;
-  padding: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 39px;
-  margin-top: 59px;
-  border: solid 2px rgb(17, 120, 100);
+  font-size: 20px;
+  margin-top: 63px;
+  padding-right: 300px;
+
+
+
 }
 
-div.favoritos h6 {
-color: black;
-font-size: 20px;
-margin-top: 10px;
+
+div.favoritos{
+  height: auto;
+  font-size: 500px;
 }
 
 div.busqueda {
@@ -149,4 +106,8 @@ h1 {
       font-size: 50px;
       margin-right: 200px;
       margin-top: 11px;
+  }
+
+  h6:hover {
+
   }
