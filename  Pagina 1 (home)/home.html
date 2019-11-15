@@ -14,31 +14,40 @@
 </head>
 <body>
 
-  <div class="cabeza">
 <header>
+  <div class="cabeza">
 
 
+<div class="containerLogo">
 
   <div class="logo">
-  <img src="imagenes de series/logo.png" alt="">
+    <img src="imagenes de series/logo.png" alt="">
+  
   </div>
-  <h1>Reeks</h1>
-<div class="inicio">
-<h6 >Inicio</h6>
+
 </div>
-<div class="generos">
-  <a href="#" class="textodelgenero">Generos</a>
-</div>
-<div class="favoritos">
-<h6>Series favoritas</h6>
-</div>
-<div class="busqueda">
-<h6></h6>
-<form class="uk-search uk-search-default">
-    <input class="uk-search-input" type="search" placeholder="Search...">
-    <a href="file:///C:/Users/DH/Desktop/proyecto%20final%20verdadero/ProyectoIntegrador/pagina%204%20(listado%20de%20generos)/gen.html"></a>
-</form>
-</div>
+  <div class="containerInfo">
+
+  <div class="inicio">
+    <h6 >Inicio</h6>
+  </div>
+
+  <div class="generos">
+    <a href="#" class="textodelgenero">Generos</a>
+  </div>
+
+  <div class="favoritos">
+      <h6>Series favoritas</h6>
+  </div>
+
+    <div class="busqueda">
+          <h6></h6>
+          <form class="uk-search uk-search-default">
+          <input class="uk-search-input" type="search" placeholder="Search...">
+          <a href="file:///C:/Users/DH/Desktop/proyecto%20final%20verdadero/ProyectoIntegrador/pagina%204%20(listado%20de%20generos)/gen.html"></a>
+      </form>
+    </div>
+  </div>
 </div>
   </header>
 
@@ -77,13 +86,50 @@
 
     <div class="populares">
       <h4>Series más populares</h4>
-      
+      <div uk-slider>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+
+
+      <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m" id="populares">
+
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+        </div>
+
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
     </div>
-<div class="alAireHoy">
+
+
+    </div>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br>
+<div class="alAires">
   <h4>Series al aire hoy</h4>
-  <ul>
-      /*completar*/
-  </ul>
+  <div uk-slider>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+
+
+  <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m" id="alAire">
+
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+  </div>
 </div>
 
 </main>
