@@ -91,3 +91,41 @@ body{
 div.h3.lenguajeoriginal {
   color: white;
 }
+div.div-resultados{
+  display: flex;
+  justify-content: space-around;
+
+}
+div.contenedorPorGeneros{
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 600px){
+  div.inicio h2, div.generos h2, div.favoritos h2 { font-size: 1em;
+  }
+}
+
+@media (max-width: 600px){
+  div.inicio, div.generos, div.favoritos { font-size: 1em;
+  }
+}
+
+
+@media (max-width: 600px){
+  div.mejorPuntuadas h4, .populares h4, .alAires h4{
+    color: white;
+    font-size: 2em;
+    font-family:inherit;
+  }
+  }
+
+
+@media (max-width: 600px){
+  div.containerInfo{
+display: flex;
+justify-content: flex-end;
+flex-wrap: wrap;
+position: absolute;
+
+  }
+}
