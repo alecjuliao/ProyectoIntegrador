@@ -16,7 +16,7 @@ var url_string = window.location.href;
 var url = new URL(url_string);
 var id = url.searchParams.get("id");
   console.log(id);
-fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=c0e01d0df95b98b689dcb3af16007742&language=en-US")
+fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=c737da8edba65cd6dc516d8db8f7bf5b&language=en-US")
 .then(function(respuesta){
  return respuesta.json();
 })
@@ -50,7 +50,7 @@ console.log(foto_conteiner);
      console.log(foto_conteiner);
 })
 ///////TRAILER
-fetch("https://api.themoviedb.org/3/tv/" + id + "/videos?api_key=c0e01d0df95b98b689dcb3af16007742&language=en-US")
+fetch("https://api.themoviedb.org/3/tv/" + id + "/videos?api_key=c737da8edba65cd6dc516d8db8f7bf5b&language=en-US")
   .then(function(respuesta){
     return respuesta.json();
   })
@@ -75,7 +75,7 @@ fetch("https://api.themoviedb.org/3/tv/" + id + "/videos?api_key=c0e01d0df95b98b
      if (seriesFavoritos.includes(id)) {
        document.querySelector(".buttonFav").innerHTML = "QUITAR DE FAVORITOS";
      }
-     fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=2e2296c9e03da266b3fa417a70458299&language=en-US")
+     fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=c737da8edba65cd6dc516d8db8f7bf5b&language=en-US")
        .then(function(response) {
          return response.json();
        })
@@ -86,7 +86,7 @@ fetch("https://api.themoviedb.org/3/tv/" + id + "/videos?api_key=c0e01d0df95b98b
        var botonFavorito = document.querySelector(".buttonFav")
        console.log(botonFavorito);
        document.querySelector(".buttonFav").onclick = function() {
-         
+
        //Paso 2: Modificar la informacion
        // Si la serie ya era favorito
        if (seriesFavoritos.includes(id)) {

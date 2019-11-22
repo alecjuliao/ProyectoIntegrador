@@ -14,7 +14,7 @@ window.addEventListener("load", function() {
   for (var i = 0; i < seriesFavoritos.length; i++) {
     if(!seriesFavoritos[i].empty) {
       // BUSCAR ESE SERIE Y MOSTRARLO
-      fetch("https://api.themoviedb.org/3/tv/" + seriesFavoritos[i] + "?api_key=2e2296c9e03da266b3fa417a70458299&language=en-US")
+      fetch("https://api.themoviedb.org/3/tv/" + seriesFavoritos[i] + "?api_key=c737da8edba65cd6dc516d8db8f7bf5b&language=en-US")
         .then(function(response) {
           return response.json();
         })

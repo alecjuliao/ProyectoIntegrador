@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
   var page = 1;
   vermas()
   function vermas() {
-    var url = "https://api.themoviedb.org/3/search/tv?api_key=2e2296c9e03da266b3fa417a70458299&language=en-US&query=" + buscar + '&page=' + page
+    var url = "https://api.themoviedb.org/3/search/tv?api_key=c737da8edba65cd6dc516d8db8f7bf5b&language=en-US&query=" + buscar + '&page=' + page
     fetch(url)
       .then(function(respuesta) {
         return respuesta.json();
