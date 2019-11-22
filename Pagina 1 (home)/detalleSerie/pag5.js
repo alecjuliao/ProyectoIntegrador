@@ -55,7 +55,7 @@ fetch("https://api.themoviedb.org/3/tv/" + id + "/videos?api_key=c0e01d0df95b98b
   })
   .then(function(datos){
     console.log(datos);
-     var div_trailer = document.querySelector(".trailer_conteiner");
+     var div_trailer = document.querySelector(".contenedortrailer");
      var trailer = datos.results;
 
      for (var i=0; i<trailer.length; i++){
