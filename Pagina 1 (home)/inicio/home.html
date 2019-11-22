@@ -33,7 +33,35 @@
   </div>
 
   <div class="generos">
-    <a href="#" class="textodelgenero">Generos</a>
+    <body>
+
+    <!-- This is a button toggling the off-canvas -->
+    <button uk-toggle="target: #my-id" type="button"> Generos</button>
+    <ul>
+
+    </ul>
+
+    <!-- This is an anchor toggling the off-canvas -->
+    <a href="#my-id" uk-toggle></a>
+
+    <!-- This is the off-canvas -->
+    <div id="my-id" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+          <a href="#" class="textodelgenero">Generos</a>
+
+            <button class="uk-offcanvas-close" type="button" uk-close>Cerrar</button>
+            <ul>
+              accion
+              <br>
+              comedia
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+
   </div>
 
   <div class="favoritos">
