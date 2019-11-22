@@ -1,7 +1,26 @@
 
 
 header{
-  height: 8vw
+  height: 8vw;
+  background: linear-gradient(rgb(255, 0, 0));
+}
+h2 strong{
+  color: white;
+}
+#tituloPorGenero{
+  color: white;
+}
+main{
+  margin-top: 200px;
+}
+h3 strong{
+  color: white;
+}
+div.contenedortrailer h1, h2, h3{
+  color: white;
+}
+div.recomendados h4{
+  color: white;
 }
 
   div.cabeza{
@@ -9,12 +28,26 @@ display: flex;
 flex-wrap: wrap;
 width: 100%;
 height: 100%;
+position: relative;
   }
+div.mejorPuntuadas h4, .populares h4, .alAires h4{
+  color: white;
+  font-size: 40px;
+  font-family:inherit;
+}
+div.redes h2{
+  color: gray;
+}
+div.redes{
+  background-image: url("../imagenes-de-series/fondo.jpg");
+
+}
 
 
 div.containerLogo{
   width: 30%;
   height: 100%;
+  padding-top: 20px;
 }
 div.logo{
 height: 100%;
@@ -22,20 +55,39 @@ height: 100%;
 div.logo img{
 height: 100%;
 }
-div.generos , .favoritos , .inicio {
-  width: 15%;
+div.generos h2, .favoritos h2, .inicio h2 {
+  width: 150px;
+  font-family: fantasy;
+  font-style: bold;
+  color: white;
 }
-
-div.containerInfo{
+div.contenedor-p-i{
+display: flex;
+}
+div.contenedorinfoserie{
+  width: 150%;
+}
+div.contenedorposter{
   width: 70%;
+}
+div.containerGeneros{
+  font-size: 30px;
+}
+div.containerInfo{
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  justify-content: space-between;
+  justify-content:space-between;
+  padding-top: 50px;
+  position: absolute;
+left: 30%;
 }
-div.busqueda{
- width: 35%
-}
+
 body{
  background-image: url("../imagenes-de-series/fondo.jpg");
+}
+
+div.h3.lenguajeoriginal {
+  color: white;
 }

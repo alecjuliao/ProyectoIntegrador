@@ -3,6 +3,7 @@
   <head>
       <link rel="stylesheet" href="home.css">
       <script src= "home.js"></script>
+      <script src="../buscador-normal/buscadornormal.js" charset="utf-8"></script>
       <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
 
@@ -20,59 +21,31 @@
 
 <div class="containerLogo">
 
-  <div class="logo">
+  <div class="logo"> <a href="file:///C:/Users/alecj/OneDrive/Desktop/final%20jan/ProyectoIntegrador/Pagina%201%20(home)/inicio/home.html">
     <img src="../imagenes-de-series/logo.png" alt="">
-
+</a>
   </div>
 
 </div>
   <div class="containerInfo">
 
   <div class="inicio">
-    <h6 >Inicio</h6>
+    <a href="../inicio/home.html"><h2 >Inicio</h2></a>
   </div>
 
   <div class="generos">
-    <body>
-
-    <!-- This is a button toggling the off-canvas -->
-    <button uk-toggle="target: #my-id" type="button"> Generos</button>
-    <ul>
-
-    </ul>
-
-    <!-- This is an anchor toggling the off-canvas -->
-    <a href="#my-id" uk-toggle></a>
-
-    <!-- This is the off-canvas -->
-    <div id="my-id" uk-offcanvas>
-        <div class="uk-offcanvas-bar">
-          <a href="#" class="textodelgenero">Generos</a>
-
-            <button class="uk-offcanvas-close" type="button" uk-close>Cerrar</button>
-            <ul>
-              accion
-              <br>
-              comedia
-            </ul>
-
-        </div>
-    </div>
-
-</body>
-
-
+    <a href="../generos/generos.html"><h2 >Generos</h2></a>
   </div>
 
-  <div class="favoritos">
-      <h6>Series favoritas</h6>
+  <div class="favoritos"> <a href="../favoritos/favoritos.html">
+      <h2>Series favoritas</h2>
+      </a>
   </div>
 
     <div class="busqueda">
           <h6></h6>
-          <form class="uk-search uk-search-default">
-          <input class="uk-search-input" type="search" placeholder="Search...">
-          <a href="file:///C:/Users/DH/Desktop/proyecto%20final%20verdadero/ProyectoIntegrador/pagina%204%20(listado%20de%20generos)/gen.html"></a>
+          <form class="uk-search uk-search-default"action="../buscador-normal/resultados-busqueda.html">
+          <input class="uk-search-input" type="search"name="mirar" placeholder="Search...">
       </form>
     </div>
   </div>
@@ -82,7 +55,7 @@
   <main>
 
 
-    <div class="mejorPuntuadas">
+<div class="mejorPuntuadas">
       <h4>Series mejores puntuadas</h4>
 
 

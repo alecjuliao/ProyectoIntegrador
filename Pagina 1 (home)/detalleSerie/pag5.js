@@ -30,7 +30,7 @@ console.log(foto_conteiner);
   var gnre = datos.genres
   var losgeneros ="";
   for (var i=0; i<gnre.length; i++){
-    losgeneros += ' <a href="series_xgenero.html?id='+ datos.genres[i].id+'">' + datos.genres[i].name + '</a> '
+    losgeneros += ' <a href="../seriesPorGenero/seriesPorGenero.html?id='+ datos.genres[i].id +'&name='+ datos.genres[i].name +'">' + datos.genres[i].name + '</a> '
 
   }
   info_conteiner.innerHTML += '<h3><strong>Géneros: </strong>' +  losgeneros + '</h3>'
@@ -64,13 +64,6 @@ fetch("https://api.themoviedb.org/3/tv/" + id + "/videos?api_key=c0e01d0df95b98b
 
      }
    })
-//----------- Boton --------------------
-var recom = document.querySelector(".Recomendaciones");
-var btn = document.querySelector("#boton-recom");
-
-btn.onclick = function (){
-  recom.classList.toggle('show')
-}
 
 
 
@@ -84,48 +77,15 @@ fetch("https://api.themoviedb.org/3/tv/" + id + "/recommendations?api_key=c0e01d
   })
   .then(function(datos){
     console.log(datos);
-     var recomen = document.querySelector("#Reco");
-     var pel = datos.results;
+     var recomen = document.querySelector("#seriesRecomendados");
 
-     for (var i=0; i<pel.length; i++){
-       recomen.innerHTML += '<li><a id="click_pelis" href="info_serie.html?id='+ datos.results[i].id +'"> ' + '<img src="https://image.tmdb.org/t/p/w500/' + datos.results[i].poster_path + '">' + '</a></li>'
+     for (var i=0; i<datos.results.length; i++){
+       document.querySelector("#seriesRecomendados").innerHTML += '<li><a href=pagina5.html?id='+ datos.results[i].id +'"> ' + '<img src="https://image.tmdb.org/t/p/w500/' + datos.results[i].poster_path + '">' + '</a></li>'
      }
    })
 
 
 
-// FAVORITOS
-//
-
-var datos = new URLSearchParams(location.search);
-var id = datos.get("id");
-if (seriesFavoritos.includes(id)) {
- document.querySelector(".botonFavorito").innerHTML = "QUITAR DE FAVORITOS";
-}
-fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=2e2296c9e03da266b3fa417a70458299&language=en-US")
- .then(function(response) {
-   return response.json();
- })
- .then(function(id) {
- })
- document.querySelector(".botonFavorito").onclick = function() {
-   //Paso 2: Modificar la informacion
-   // Si la serie ya era favorito
-   if (seriesFavoritos.includes(id)) {
-     // Lo quito
-     var index = seriesFavoritos.indexOf(id);
-     seriesFavoritos.splice(index, 1);
-     document.querySelector(".botonFavorito").innerHTML = "AGREGAR FAVORITO";
-   } else {
-     //Lo agrego
-     seriesFavoritos.push(id);
-     document.querySelector(".botonFavorito").innerHTML = "QUITAR DE FAVORITOS";
-   }
-   //Paso 3: Escribir en storage
-   var infoParaStorage = JSON.stringify(seriesFavoritos);
-   localStorage.setItem("seriesFavoritos", infoParaStorage);
-   console.log(localStorage);
- }
 
 
 }
