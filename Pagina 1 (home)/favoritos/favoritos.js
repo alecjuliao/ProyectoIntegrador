@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
         })
         .then(function(serie) {
           console.log(serie)
-        document.querySelector(".listaFav").innerHTML += '<li>'+ '<a href="../detalles-serie/detalles-serie.html?id='+ serie.id +'">' + '<img src="https://image.tmdb.org/t/p/w300/' + serie.poster_path + '">' + '</a>'+ '</li>'
+        document.querySelector(".listaFav").innerHTML += '<li>'+ '<a href="../detalleSerie/pagina5.html?id='+ serie.id +'">' + '<img src="https://image.tmdb.org/t/p/w300/' + serie.poster_path + '">' + '</a>'+ '</li>'
 
         })
     }
