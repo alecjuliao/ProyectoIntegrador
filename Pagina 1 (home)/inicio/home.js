@@ -1,4 +1,4 @@
-window.onload = function (){
+window.addEventListener ("load", function(){
   fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=c737da8edba65cd6dc516d8db8f7bf5b&language=en-US&page=1")
     .then(function(response) {
       return response.json();
@@ -47,11 +47,4 @@ fetch("https://api.themoviedb.org/3/tv/airing_today?api_key=c737da8edba65cd6dc51
 
 
 })
-
-
-
-
-
-
-
-}
+})

@@ -1,14 +1,15 @@
 window.onload = function(){
 
+  // FAVORITOS
   var recuperoStorage = localStorage.getItem("seriesFavoritos");
-   // Si todavía no tenía gifs favoritos
-   if (recuperoStorage == null) {
-     // Creo una lista vacia
-     seriesFavoritos = [];
-   } else {
-     // Descomprimo el TEXTO que tenia en storage en el array que necesito trabajar
-     seriesFavoritos = JSON.parse(recuperoStorage);
-   }
+    // Si todavía no tenía gifs favoritos
+    if (recuperoStorage == null) {
+      // Creo una lista vacia
+      seriesFavoritos = [];
+    } else {
+      // Descomprimo el TEXTO que tenia en storage en el array que necesito trabajar
+      seriesFavoritos = JSON.parse(recuperoStorage);
+    }
 
 // ////////////////Info de la serie
 var url_string = window.location.href;
@@ -67,11 +68,47 @@ fetch("https://api.themoviedb.org/3/tv/" + id + "/videos?api_key=c0e01d0df95b98b
 
 
 
+       console.log(recuperoStorage);
+    /*FavoritoS */
+     var datos = new URLSearchParams(location.search);
+     var id = datos.get("id");
+     if (seriesFavoritos.includes(id)) {
+       document.querySelector(".buttonFav").innerHTML = "QUITAR DE FAVORITOS";
+     }
+     fetch("https://api.themoviedb.org/3/tv/" + id + "?api_key=2e2296c9e03da266b3fa417a70458299&language=en-US")
+       .then(function(response) {
+         return response.json();
+       })
+
+       .then(function(id) {
+       })
+       console.log(id);
+       var botonFavorito = document.querySelector(".buttonFav")
+       console.log(botonFavorito);
+       document.querySelector(".buttonFav").onclick = function() {
+         
+       //Paso 2: Modificar la informacion
+       // Si la serie ya era favorito
+       if (seriesFavoritos.includes(id)) {
+         // Lo quito
+         var index = seriesFavoritos.indexOf(id);
+         seriesFavoritos.splice(index, 1);
+         document.querySelector(".buttonFav").innerHTML = "AGREGAR FAVORITO";
+       } else {
+         //Lo agrego
+         seriesFavoritos.push(id);
+         document.querySelector(".buttonFav").innerHTML = "QUITAR DE FAVORITOS";
+       }
+       //Paso 3: Escribir en storage
+       var infoParaStorage = JSON.stringify(seriesFavoritos);
+       localStorage.setItem("seriesFavoritos", infoParaStorage);
+     }
+     console.log(localStorage);
 
 
 
 /////////////////// RECOMENDADOS
-fetch("https://api.themoviedb.org/3/tv/" + id + "/recommendations?api_key=c0e01d0df95b98b689dcb3af16007742&language=en-US&page=1")
+fetch("https://api.themoviedb.org/3/tv/" + id + "/recommendations?api_key=c737da8edba65cd6dc516d8db8f7bf5b&language=en-US&page=1")
   .then(function(respuesta){
     return respuesta.json();
   })
